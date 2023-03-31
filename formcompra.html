@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>AllDead</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/estiloformcompra.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">AllDead</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="banda.html">Banda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discografia.html">Discografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conciertos.html">Conciertos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-light">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <form action="/action_page.php">
+                    <div class="container">
+                        <h1 class="logo">Comprar entradas</h1>
+                        <p>Ingrese la información para el ticket</p>
+                        <hr>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                        <label for="psw"><b>Nombre</b></label>
+                        <input type="text" name="psw" id="psw" required>
+
+                        <label for="psw-repeat"><b>Apellidos</b></label>
+                        <input type="text" name="psw-repeat" id="psw-repeat" required>
+
+                        <label for="cantidad"><b>Cantidad de Entradas</b></label>
+                        <input type="text" placeholder="0" name="cantidad" id="cantidad" required>
+                        <hr>
+                        <p>Al crear una cuenta acepta nuestros <a href="#">Terminos & Privacidad</a>.</p>
+
+                        <button type="submit" class="registerbtn" data-bs-toggle="modal" data-bs-target="#myModal">Comprar</button>
+                        
+                        <button type="reset" class="cancelbtn">Cancelar</button>
+                    </div>
+
+                    <div class="container signin">
+                        <p>Ya tienes una cuenta? <a href="#">Sign in</a>.</p>
+                    </div>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+
+
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Compra Exitosa!!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Gracias por comprar tu entrada
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="conciertos.html" role="button" class="btn btn-danger">Cerrar</a>
+                   <!--  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer bg-dark p-3 mt-5">
+        <p>Siguenos en
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-spotify"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+        </p>
+        <p>Powered by &copy;Elprofe 2023</p>
+    </footer>
+</body>
+
+</html>
