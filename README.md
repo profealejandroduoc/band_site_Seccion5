@@ -3,7 +3,7 @@
 
 <p>Todas las páginas necesarias para que funcione su proyecto</p>
 <p>Debe ser navegable, no es necesario programación </p>
-<p>Debe ser responsiba, no se debe desarmar al cambiar tamaños de dispositivos</p>
+<p>Debe ser responsiva, no se debe desarmar al cambiar tamaños de dispositivos</p>
 <p>Debe usar html</p>
 <p>Debe usar css</p>
 <p>Debe usar bootstrap</p>
